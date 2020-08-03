@@ -117,21 +117,21 @@ src
 > Below is my estimate for each component of this project:
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| Setting up React App, Git HUB, and ReadME |    H     |     3 hrs      |     3 hrs     |     3 hrs     |
-| Project proposal and Approval |    H     |     1.5 hrs      |     TBD     |     TBD     |
-| Connect API and make sure it renders  |    H     |     3 hrs      |      TBD     |    TBD    |
-| Making sure functions work correctly |    H     |     3 hrs      |     TBD     |     TBD     |
-| Add 5 songs data |    H     |     1 hr      |     TBD     |     TBD     |
-| CSS to get correct display |    M     |     3 hrs      |     TBD     |     TBD     |
-| Adding media queries to make app responsive |    H     |     3 hrs      |     TBD     |     TBD     |
-| Making Sure CRUD aspects work |    H     |     3 hrs      |     TBD     |     TBD     |
-| Debugging |    H     |     3 hrs      |     TBD     |     TBD     |
-| Making sure that default image is added |    L     |     1.5 hrs      |     TBD     |     TBD     |
-| Delete CRUD Button |    L     |     2 hrs      |     TBD     |     TBD     |
-| Advanced CSS |    L     |     2 hrs      |     TBD     |     TBD     |
-| Sending page info to user |    L     |     3 hrs      |     TBD     |     TBD     |
-| Third-party API research and addition  |    L     |     3 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     32 hrs      |     TBD     |     TBD     |
+|     Setting up React App, Git HUB, and ReadME  |    H     |     3 hrs      |     3 hrs     |     3 hrs     |
+|     Project proposal and Approval       |    H     |     1.5 hrs      |     TBD     |     TBD     |
+|      Connect API and make sure it renders      |    H     |     3 hrs      |      TBD     |    TBD    |
+|     Making sure functions work correctly       |    H     |     3 hrs      |     TBD     |     TBD     |
+|      Add 5 songs data       |    H     |     1 hr      |     TBD     |     TBD     |
+|     CSS to get correct display    |    M     |     3 hrs      |     TBD     |     TBD     |
+|      Adding media queries to make app responsive    |    H     |     3 hrs      |     TBD     |     TBD     |
+|     Making Sure CRUD aspects work  |    H     |     3 hrs      |     TBD     |     TBD     |
+|      Debugging  |    H     |     3 hrs      |     TBD     |     TBD     |
+|      Making sure that default image is added  |    L     |     1.5 hrs      |     TBD     |     TBD     |
+|      Delete CRUD Button      |    L     |     2 hrs      |     TBD     |     TBD     |
+|      Advanced CSS     |    L     |     2 hrs      |     TBD     |     TBD     |
+|      Sending page info to user    |    L     |     3 hrs      |     TBD     |     TBD     |
+|      Third-party API research and addition     |    L     |     3 hrs      |     TBD     |     TBD     |
+|     TOTAL                    |          |     32 hrs      |     TBD     |     TBD     |
 
 <br>
 
@@ -149,11 +149,11 @@ src
 
 > My project will include the following post MVP:
 
-- _Adding a default image when no picture in included._
-- _Adding deleting of song info button._
-- _Adding animations to buttons._
-- _Finding a way to send song info to user if they like the song._
-- _Looking an API that can potentially play a snippet of the song._
+- Adding a default image when no picture in included.
+- Adding deleting of song info button.
+- Adding animations to buttons.
+- Finding a way to send song info to user if they like the song.
+- Looking an API that can potentially play a snippet of the song.
 
 
 <br>
