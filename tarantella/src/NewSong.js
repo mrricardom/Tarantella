@@ -1,0 +1,5 @@
+// const [title, updateTitle] = useState()
+//   const [artist, updateArtist] = useState()
+//   const [album, updateAlbum] = useState()
+//   const [genre, updateGenre] = useState()
+//   const [picture, updatepicture] = useState()

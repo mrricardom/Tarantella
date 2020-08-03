@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
+import { Link } from "react-router-dom"
 
 function Homepage() {
   const [songTitles, updateSongTitles] = useState([])
@@ -22,8 +23,15 @@ function Homepage() {
 
   return (
     <>
+      <h4>What's Good:</h4>
       {songTitles.map((song) => {
-        return <h1>{song.fields.title}</h1>
+        return (
+          <ul>
+            <Link key={song.id} to={`/songs/${song.id}`}>
+              {song.fields.title}
+            </Link>
+          </ul>
+        )
       })}
     </>
   )
