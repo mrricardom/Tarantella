@@ -10,14 +10,14 @@ General Assembly React Project
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Homepage](https://imgur.com/a/kEmMbSp)
+[Homepage](https://imgur.com/a/kEmMbSp)
 - Homepage for App
 
-![Shuffle/Next/Back/ ](https://imgur.com/a/5oWddoY)
+[Shuffle/Next/Back/ ](https://imgur.com/a/5oWddoY)
 
 - Once song or button are clicked
 
-![Pop-up How To](https://imgur.com/a/5s7JddA)
+[Pop-up How To](https://imgur.com/a/5s7JddA)
 
 - Once How to is clicked popup will appear
 
