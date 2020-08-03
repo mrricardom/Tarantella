@@ -27,7 +27,11 @@ General Assembly React Project
 ### MVP
 > My project will include the following MVP:
 
-- _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+- _A functioning database where useres can add and edit songs._
+- _Links that can bring you the information of a song: ._
+- _Circle menu that allow you to grab a new song(shuffle), next song(next), or go previous song(back)._
+- _Menu displaying songs added by users._
+- _Page is supposed to look like an MP3 Player._
 
 <br>
 
