@@ -1,18 +1,9 @@
 # Tarantella
 General Assembly React Project
 
-## Project Planning
-
-> The Project Planning section should be completed for your project pitch with instructors.
->
-> To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
-
-<br>
-
 ### Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+_**Tarantella** Tarantella is a community-based music app designed with the undecisive music listener in mind. Through a simple interface, a user can add all of their favorite songs to a shared database and let their app choose which song to listen to next. Discover music you have never heard off. The user can press shuffle to get a random song, or click through the songs in the database to view their song's information. It is up to a user to add the song: title, artist, genre, and album; a picture will be optional to add to their entry. A familiar design will greet the user as they scroll through new upbeat music options. Let's all Taranella! 
 <br>
 
 ### Wireframes
