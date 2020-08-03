@@ -10,35 +10,24 @@ General Assembly React Project
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Dummy Link](url)
+![Homepage](https://imgur.com/a/kEmMbSp)
+- Homepage for App
 
-- Desktop Landing
+![Shuffle/Next/Back/ ](https://imgur.com/a/5oWddoY)
 
-![Dummy Link](url)
+- Once song or button are clicked
 
-- Desktop Body
+![Pop-up How To](https://imgur.com/a/5s7JddA)
 
-![Dummy Link](url)
+- Once How to is clicked popup will appear
 
-- Desktop Resource Index
-
-![Dummy Link](url)
-
-- Desktop Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 <br>
 
 ### MVP
+> My project will include the following MVP:
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+- _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
 
@@ -99,11 +88,10 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
-
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Home Page    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
+|    How-to Popup    | functional |   n   |   n   | _Popup displaying on how to use._ 
 |    Header    | functional |   n   |   n   | _The header will contain the title of the App._               |
 |  Shuffle Page  | functional |   y   |   n   | _The Shuffle page will be a result of the user pressing the shuffle button._       |
 |   Next Page    |   functional    |   y   |   n   | _The Next page will be a result of the user pressing the next arrow. Displays next song._      |
@@ -124,6 +112,7 @@ src
 | Making sure functions work correctly        |     H    |      3 hrs     |      TBD      |     TBD     |
 | Add 5 songs data                            |     H    |      1 hr      |      TBD      |     TBD     |
 | CSS to get correct display                  |     M    |      3 hrs     |      TBD      |     TBD     |
+| Linking Popup How-to        |     H    |      3 hrs     |      TBD      |     TBD     |
 | Adding media queries to make app responsive |     H    |      3 hrs     |      TBD      |     TBD     |
 | Making sure CRUD Adding aspects work        |     H    |      3 hrs     |      TBD      |     TBD     |
 | Debugging                                   |     H    |      3 hrs     |      TBD      |     TBD     |
@@ -131,7 +120,7 @@ src
 | Delete CRUD Button                          |     L    |      2 hrs     |      TBD      |     TBD     |
 | Advanced CSS                                |     L    |      2 hrs     |      TBD      |     TBD     |
 | Third-party API research and addition       |     L    |      3 hrs     |      TBD      |     TBD     |
-| TOTAL                                       |     -    |     32 hrs     |      TBD      |     TBD     |
+| TOTAL                                       |     -    |     35 hrs     |      TBD      |     TBD     |
 
 <br>
 
