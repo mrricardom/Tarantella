@@ -117,8 +117,6 @@ src
 > Bellow is my estimate for each component of this project:
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-
 | Setting up React App, Git HUB, and ReadME |    H     |     3 hrs      |     3 hrs     |     3 hrs     |
 | Project proposal and Approval |    H     |     1.5 hrs      |     TBD     |     TBD     |
 | Connect API and make sure it renders  |    H     |     3 hrs      |      TBD     |    TBD    |
