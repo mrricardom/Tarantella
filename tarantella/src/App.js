@@ -14,7 +14,7 @@ function App() {
         <Homepage></Homepage>
       </Route>
       <Route path="/new-song"></Route>
-      <Route path="/songs/id:">
+      <Route path="/songs/:id">
         <SongInfo></SongInfo>
       </Route>
       <Route></Route>
