@@ -9,6 +9,7 @@ function App() {
       <Link to="/" exact>
         Home
       </Link>
+      <Route path="/" exact></Route>
     </>
   )
 }
