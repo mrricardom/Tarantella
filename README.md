@@ -115,6 +115,7 @@ src
 #### Component Estimates
 
 > Below is my estimate for each component of this project:
+
 | Task                                        | Priority | Estimated Time | Time Invested | Actual Time |
 |---------------------------------------------|:--------:|:--------------:|:-------------:|:-----------:|
 | Setting up React App, Git HUB, and ReadME   |     H    |      3 hrs     |     4 hrs     |    4 hrs    |
