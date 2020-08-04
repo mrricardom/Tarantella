@@ -4,12 +4,14 @@ import axios from "axios"
 import Homepage from "./Homepage"
 import Header from "./Header"
 import SongInfo from "./SongInfo"
-import NextSong from "./NextSong"
+import HowTo from "./HowTo"
 import LastSong from "./LastSong"
 import "./App.css"
+import NewSong from "./NewSong"
 
 function App() {
   const [songTitles, updateSongTitles] = useState([])
+  const [songId, updateSong] = useState("")
   const history = useHistory()
 
   useEffect(() => {
@@ -27,8 +29,6 @@ function App() {
     }
     apiCall()
   }, [])
-
-  const [songId, updateSong] = useState("")
 
   const handleClick = () => {
     const size = songTitles.length
@@ -50,12 +50,16 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Link to="/" exact></Link>
       <Switch>
         <Route path="/" exact>
           <Homepage songTitles={songTitles}></Homepage>
         </Route>
-        <Route path="/new-song"></Route>
+        <Route path="/how-to">
+          <HowTo></HowTo>
+        </Route>
+        <Route path="/new-song">
+          <NewSong></NewSong>
+        </Route>
         <Route path="/songs/:id">
           <SongInfo></SongInfo>
         </Route>
@@ -63,6 +67,10 @@ function App() {
       <button onClick={handleClick}>Shuffle</button>
       <button>Next</button>
       <button>Last</button>
+      <Link to="/" exact>
+        <button>Home</button>
+      </Link>
+      <Link to="/new-song">Add a Song</Link>
     </>
   )
 }

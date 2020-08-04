@@ -6,7 +6,9 @@ function Header() {
       <Link to="/" exact>
         <h1>Tarantella</h1>
       </Link>
-      <h3>How to use this app</h3>
+      <Link to="/how-to">
+        <h3>How to use this app</h3>
+      </Link>
     </div>
   )
 }
