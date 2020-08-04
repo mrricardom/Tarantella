@@ -19,7 +19,7 @@ function SongInfo() {
       updateSong(response.data.fields)
     }
     songDisplay()
-  }, [])
+  }, [params.id])
 
   return (
     <>
