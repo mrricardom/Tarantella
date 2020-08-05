@@ -10,7 +10,7 @@ function Homepage(props) {
   }, [updateSongId])
 
   return (
-    <>
+    <div className="song-menu">
       <h4>What's Good:</h4>
       {songTitles.map((song) => {
         return (
@@ -21,7 +21,7 @@ function Homepage(props) {
           </ul>
         )
       })}
-    </>
+    </div>
   )
 }
 

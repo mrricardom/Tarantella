@@ -2,17 +2,18 @@ import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import axios from "axios"
 
-function NewSong() {
+function NewSong(props) {
   const [title, updateTitle] = useState("")
   const [artist, updateArtist] = useState("")
   const [album, updateAlbum] = useState("")
   const [genre, updateGenre] = useState("")
   const [picture, updatePicture] = useState("")
+  const { newSong, updateNewSong } = props
   const history = useHistory()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const newSong = axios.post(
+    const newData = await axios.post(
       "https://api.airtable.com/v0/appgWGu76q5261d23/Songs",
       {
         fields: {
@@ -33,6 +34,7 @@ function NewSong() {
         },
       }
     )
+    updateNewSong(newSong + 1)
     updateTitle("")
     updateArtist("")
     updateAlbum("")

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import axios from "axios"
 
-function SongInfo() {
+function SongInfo(props) {
   const params = useParams()
   const [song, updateSong] = useState({})
 
@@ -17,18 +17,21 @@ function SongInfo() {
         }
       )
       updateSong(response.data.fields)
+      props.updateSongId(params.id)
     }
     songDisplay()
   }, [params.id])
 
   return (
-    <>
+    <div className="song-info">
       <img src={song.picture}></img>
-      <h2>Title: {song.title}</h2>
-      <h3>Artist: {song.artist}</h3>
-      <h3>Album: {song.album}</h3>
-      <h3>Genre: {song.genre}</h3>
-    </>
+      <div className="song-info-text">
+        <h2>Title: {song.title}</h2>
+        <h3>Artist: {song.artist}</h3>
+        <h3>Album: {song.album}</h3>
+        <h3>Genre: {song.genre}</h3>
+      </div>
+    </div>
   )
 }
 

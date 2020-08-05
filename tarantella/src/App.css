@@ -1,10 +1,109 @@
-.App {
-  text-align: center;
+.header {
+  background-color: #61dafb;
+  margin-bottom: 80px;
+  margin-top: 0;
+}
+.header h1 {
+  background-color: #61dafb;
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 30px;
+  padding-left: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h3 {
+  background-color: #61dafb;
+  display: inline-block;
+  float: right;
+  padding-top: 35px;
+  margin-top: 0;
+  padding-right: 40px;
+}
+
+.content-screen {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px 100px;
+  height: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.song-menu {
+  margin: 0 auto;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.song-info img {
+  height: 200px;
+  width: 200px;
+  padding-right: 20px;
+}
+
+.song-info-text {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 0;
+}
+.song-info-text h2 {
+  margin-top: 15px;
+}
+.song-info-text h3 {
+  margin-top: 0;
+}
+
+.circle-menu {
+  border: black solid;
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    ". shuffle ."
+    "last add next"
+    ". home .";
+  justify-items: center;
+  overflow: hidden;
+}
+.shuffle {
+  grid-area: shuffle;
+  justify-self: stretch;
+  align-self: stretch;
+  padding-top: 100px;
+}
+.last {
+  grid-area: last;
+  justify-self: stretch;
+  align-self: stretch;
+  padding-left: 100px;
+}
+.next {
+  grid-area: next;
+  justify-self: stretch;
+  align-self: stretch;
+  padding-right: 100px;
+}
+.home {
+  grid-area: home;
+  justify-self: stretch;
+  align-self: stretch;
+  padding-bottom: 100px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
