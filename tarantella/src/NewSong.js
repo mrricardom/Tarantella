@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import axios from "axios"
 
@@ -20,7 +20,10 @@ function NewSong() {
           artist: artist,
           album: album,
           genre: genre,
-          picture: picture,
+          picture:
+            picture === ""
+              ? "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0qm3pZnMbeT-U3ccvkQBK1Ntc0cNkwG00IA&usqp=CAU"
+              : picture,
         },
       },
       {
@@ -37,13 +40,6 @@ function NewSong() {
     updatePicture("")
     history.push("/")
   }
-  // useEffect(() => {
-  //   if (picture === "") {
-  //     return "https://www.macworld.co.uk/cmsdata/features/3612963/how_to_get_music_on_iphone_1600home_thumb900_1-1.jpg"
-  //   } else {
-  //     return { picture }
-  //   }
-  // }, [{ picture }])
 
   return (
     <form onSubmit={handleSubmit}>
