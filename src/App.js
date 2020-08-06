@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Route, Link, Switch, useHistory } from "react-router-dom"
+import { Route, Switch, useHistory } from "react-router-dom"
 import axios from "axios"
 import Homepage from "./Homepage"
 import Header from "./Header"
@@ -107,15 +107,31 @@ function App() {
           </Switch>
         </div>
         <div className="color-buttons">
-          <button className="red" onClick={() => updateColor("red")}></button>
           <button
             className="white"
             onClick={() => updateColor("white")}
           ></button>
-          <button className="blue" onClick={() => updateColor("blue")}></button>
+          <button className="red" onClick={() => updateColor("red")}></button>
           <button className="pink" onClick={() => updateColor("pink")}></button>
+          <button
+            className="orange"
+            onClick={() => updateColor("orange")}
+          ></button>
+          <button
+            className="yellow"
+            onClick={() => updateColor("yellow")}
+          ></button>
+          <button
+            className="green"
+            onClick={() => updateColor("green")}
+          ></button>
+          <button className="blue" onClick={() => updateColor("blue")}></button>
+          <button
+            className="purple"
+            onClick={() => updateColor("purple")}
+          ></button>
         </div>
-        <div className={`circle-menu`}>
+        <div className={`circle-menu `}>
           <button className="shuffle" onClick={handleClick}>
             <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/shuffle_icon-icons.com_50042.png" />
           </button>

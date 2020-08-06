@@ -1,3 +1,7 @@
+* {
+  font-family: "Arimo", sans-serif;
+}
+
 .app {
   background-color: grey;
 }
@@ -12,6 +16,7 @@
   border: black solid;
   margin: 0 30px 30px 30px;
 }
+
 .header h1 {
   color: white;
   display: inline-block;
@@ -41,6 +46,7 @@
   max-height: 500px;
   overflow-y: scroll;
 }
+
 .color-buttons {
   margin-left: 70px;
 }
@@ -56,6 +62,10 @@
   background-color: red;
 }
 
+.orange {
+  background-color: #ff7f50;
+}
+
 .white {
   background-color: white;
 }
@@ -63,12 +73,30 @@
 .blue {
   background-color: #00bfff;
 }
+
 .pink {
   background-color: #ff69b4;
 }
 
+.green {
+  background-color: #7fff00;
+}
+
+.yellow {
+  background-color: #ffff00;
+}
+
+.purple {
+  background-color: #9400d3;
+}
+
 .to-do {
   height: 100%;
+  padding: 0 20px 20px 20px;
+}
+
+.to-do :last-child {
+  margin-bottom: 20px;
 }
 
 .song-menu {
@@ -90,6 +118,7 @@
 .song-info img {
   height: 200px;
   width: 200px;
+  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -102,6 +131,7 @@
 .song-info-text h2 {
   margin-top: 15px;
 }
+
 .song-info-text h3 {
   margin-top: 0;
 }
@@ -126,7 +156,6 @@
 }
 
 .circle-menu button {
-  background: none;
   align-content: center;
 }
 
@@ -135,6 +164,7 @@
   justify-self: stretch;
   align-self: stretch;
   border: none;
+  background: none;
   outline: none;
 }
 
@@ -143,13 +173,16 @@
   justify-self: stretch;
   align-self: stretch;
   border: none;
+  background: none;
   outline: none;
 }
+
 .next {
   grid-area: next;
   justify-self: stretch;
   align-self: stretch;
   border: none;
+  background: none;
   outline: none;
 }
 
@@ -160,14 +193,15 @@
   border: black solid;
   border-radius: 50%;
   outline: none;
-  /* background-color: `${color}`}; */
 }
+
 .home {
   grid-area: home;
   justify-self: stretch;
   align-self: stretch;
   border: none;
   outline: none;
+  background: none;
 }
 
 .circle-menu img {
@@ -176,15 +210,44 @@
   align-content: center;
 }
 
-.footer {
+.new-song {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-song form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-song input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submit {
+  font-size: 25px;
+}
+
+footer {
   padding-left: 30px;
   padding-right: 30px;
+  width: 100vw;
+  box-sizing: border-box;
   background-color: grey;
 }
-.footer img {
+
+footer img {
   height: 40px;
   width: 40px;
-  align-content: center;
+  background-color: grey;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  padding-bottom: 10px;
 }
 
 /* @media (prefers-reduced-motion: no-preference) {

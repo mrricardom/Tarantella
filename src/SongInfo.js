@@ -24,7 +24,7 @@ function SongInfo(props) {
 
   return (
     <div className="song-info">
-      <img src={song.picture}></img>
+      <img src={song.picture} alt="album image"></img>
       <div className="song-info-text">
         <h2>Title: {song.title}</h2>
         <h3>Artist: {song.artist}</h3>

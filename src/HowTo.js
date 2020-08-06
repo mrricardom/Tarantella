@@ -12,6 +12,12 @@ function HowTo() {
         Either click through the titles or use the interactive circle menu to
         let the app choose which song to listen to next. Let's all Taranella!
       </p>
+      <h1>I hate white. Can I make this page my favorite color?</h1>
+      <p>
+        Yes you can! Below the content screen you will see buttons with
+        different colors. Click on the preferred button to make the background
+        of the mp3 player your favorite color!
+      </p>
       <h1>What are the buttons on the bottom of the page?</h1>
       <p>
         The bottom buttons are representative of "Shuffle", "Next", "Home",
@@ -22,7 +28,7 @@ function HowTo() {
         random song from the database. On any page on this app you can use the
         bottom menu to access the songs.
       </p>
-      <h1>How Do I Add a Song?</h1>
+      <h1>How do I add a song?</h1>
       <p>
         Adding an entry to Tarantella is very simple. All you have to do is
         click on the "+" button in the middle of the cirle menu to go to a form
