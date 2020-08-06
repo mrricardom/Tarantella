@@ -65,6 +65,10 @@ function App() {
   // find the index of song with id of songid in songTitles
   // if(index is -1, then take the last song. if not then the id is index - 1
 
+  const home = () => history.push("/")
+
+  const add = () => history.push("/new-song")
+
   useEffect(() => {
     if (songId === "") {
       history.push("/")
@@ -76,40 +80,52 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className="content-screen">
-        <Link to="/new-song">Add a Song</Link>
-        <Switch>
-          <Route path="/" exact>
-            <Homepage
-              updateSongId={updateSongId}
-              songTitles={songTitles}
-            ></Homepage>
-          </Route>
-          <Route path="/how-to">
-            <HowTo></HowTo>
-          </Route>
-          <Route path="/new-song">
-            <NewSong updateNewSong={updateNewSong} newsong={newSong}></NewSong>
-          </Route>
-          <Route path="/songs/:id">
-            <SongInfo updateSongId={updateSongId}></SongInfo>
-          </Route>
-        </Switch>
-      </div>
-      <div className="circle-menu">
-        <button className="shuffle" onClick={handleClick}>
-          Shuffle
-        </button>
-        <Link className="home" to="/" exact>
-          <button>Home</button>
-        </Link>
-
-        <button className="last" onClick={back}>
-          Last
-        </button>
-        <button className="next" onClick={next}>
-          Next
-        </button>
+      <div className="body">
+        <div className="content-screen">
+          {/* <Link to="/new-song">Add a Song</Link> */}
+          <Switch>
+            <Route path="/" exact>
+              <Homepage
+                updateSongId={updateSongId}
+                songTitles={songTitles}
+              ></Homepage>
+            </Route>
+            <Route path="/how-to">
+              <HowTo></HowTo>
+            </Route>
+            <Route path="/new-song">
+              <NewSong
+                updateNewSong={updateNewSong}
+                newsong={newSong}
+              ></NewSong>
+            </Route>
+            <Route path="/songs/:id">
+              <SongInfo updateSongId={updateSongId}></SongInfo>
+            </Route>
+          </Switch>
+        </div>
+        <div className="circle-menu">
+          <button className="shuffle" onClick={handleClick}>
+            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/shuffle_icon-icons.com_50042.png" />
+          </button>
+          <button onClick={home} className="home">
+            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-home_icon-icons.com_50253.png" />
+          </button>
+          {/* <Link className="home" to="/" exact>
+          <button>
+            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-home_icon-icons.com_50253.png" />
+          </button>
+        </Link> */}
+          <button className="next" onClick={next}>
+            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-forward_icon-icons.com_50040.png" />
+          </button>
+          <button className="last" onClick={back}>
+            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-backward_icon-icons.com_50041.png" />
+          </button>
+          <button className="add" onClick={add}>
+            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/plus_icon-icons.com_50064.png" />
+          </button>
+        </div>
       </div>
     </>
   )

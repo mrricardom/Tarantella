@@ -1,7 +1,12 @@
 .header {
   background-color: #61dafb;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   margin-top: 0;
+}
+
+.body {
+  border: black solid;
+  margin: 0 30px 30px 30px;
 }
 .header h1 {
   background-color: #61dafb;
@@ -23,10 +28,11 @@
 .content-screen {
   border: solid black;
   display: flex;
+  background-color: #eff4fa;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 100px 100px;
+  margin: 70px;
   height: 500px;
   max-height: 500px;
   overflow-y: scroll;
@@ -81,29 +87,50 @@
   justify-items: center;
   overflow: hidden;
 }
+
+.circle-menu button {
+  background: none;
+  align-content: center;
+}
+
 .shuffle {
   grid-area: shuffle;
   justify-self: stretch;
   align-self: stretch;
-  padding-top: 100px;
+  border: none;
 }
+
 .last {
   grid-area: last;
   justify-self: stretch;
   align-self: stretch;
-  padding-left: 100px;
+  border: none;
 }
 .next {
   grid-area: next;
   justify-self: stretch;
   align-self: stretch;
-  padding-right: 100px;
+  border: none;
+}
+
+.add {
+  grid-area: add;
+  justify-self: stretch;
+  align-self: stretch;
+  border: black solid;
+  border-radius: 50%;
 }
 .home {
   grid-area: home;
   justify-self: stretch;
   align-self: stretch;
-  padding-bottom: 100px;
+  border: none;
+}
+
+.circle-menu img {
+  height: 50px;
+  width: 50px;
+  align-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
