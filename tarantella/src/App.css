@@ -1,5 +1,9 @@
+.app {
+  background-color: grey;
+}
+
 .header {
-  background-color: #61dafb;
+  background-color: black;
   margin-bottom: 30px;
   margin-top: 0;
 }
@@ -9,7 +13,7 @@
   margin: 0 30px 30px 30px;
 }
 .header h1 {
-  background-color: #61dafb;
+  color: white;
   display: inline-block;
   margin-top: 0;
   padding-top: 30px;
@@ -17,7 +21,7 @@
 }
 
 .header h3 {
-  background-color: #61dafb;
+  color: white;
   display: inline-block;
   float: right;
   padding-top: 35px;
@@ -32,14 +36,48 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 70px;
+  margin: 70px 70px 0 70px;
   height: 500px;
   max-height: 500px;
   overflow-y: scroll;
 }
+.color-buttons {
+  margin-left: 70px;
+}
+
+.color-buttons button {
+  height: 20px;
+  margin-bottom: 70px;
+  outline: none;
+  border: black inset;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.blue {
+  background-color: #00bfff;
+}
+.pink {
+  background-color: #ff69b4;
+}
+
+.to-do {
+  height: 100%;
+}
 
 .song-menu {
-  margin: 0 auto;
+  height: 100%;
+}
+
+.song-menu a {
+  text-decoration: none;
+  color: black;
 }
 
 .song-info {
@@ -47,8 +85,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .song-info img {
@@ -73,6 +109,7 @@
 .circle-menu {
   border: black solid;
   border-radius: 50%;
+  background-color: white;
   height: 400px;
   width: 400px;
   margin: 0 auto;
@@ -98,6 +135,7 @@
   justify-self: stretch;
   align-self: stretch;
   border: none;
+  outline: none;
 }
 
 .last {
@@ -105,12 +143,14 @@
   justify-self: stretch;
   align-self: stretch;
   border: none;
+  outline: none;
 }
 .next {
   grid-area: next;
   justify-self: stretch;
   align-self: stretch;
   border: none;
+  outline: none;
 }
 
 .add {
@@ -119,12 +159,15 @@
   align-self: stretch;
   border: black solid;
   border-radius: 50%;
+  outline: none;
+  /* background-color: `${color}`}; */
 }
 .home {
   grid-area: home;
   justify-self: stretch;
   align-self: stretch;
   border: none;
+  outline: none;
 }
 
 .circle-menu img {
@@ -133,7 +176,18 @@
   align-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.footer {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: grey;
+}
+.footer img {
+  height: 40px;
+  width: 40px;
+  align-content: center;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -161,4 +215,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

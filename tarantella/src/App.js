@@ -6,12 +6,14 @@ import Header from "./Header"
 import SongInfo from "./SongInfo"
 import HowTo from "./HowTo"
 import NewSong from "./NewSong"
+import Footer from "./Footer"
 import "./App.css"
 
 function App() {
   const [songTitles, updateSongTitles] = useState([])
   const [songId, updateSongId] = useState("")
   const [newSong, updateNewSong] = useState(0)
+  const [color, updateColor] = useState("white")
   const history = useHistory()
 
   useEffect(() => {
@@ -78,9 +80,9 @@ function App() {
   }, [songId])
 
   return (
-    <>
+    <div className="app">
       <Header></Header>
-      <div className="body">
+      <div className={`body ${color}`}>
         <div className="content-screen">
           {/* <Link to="/new-song">Add a Song</Link> */}
           <Switch>
@@ -104,30 +106,37 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <div className="circle-menu">
+        <div className="color-buttons">
+          <button className="red" onClick={() => updateColor("red")}></button>
+          <button
+            className="white"
+            onClick={() => updateColor("white")}
+          ></button>
+          <button className="blue" onClick={() => updateColor("blue")}></button>
+          <button className="pink" onClick={() => updateColor("pink")}></button>
+        </div>
+        <div className={`circle-menu`}>
           <button className="shuffle" onClick={handleClick}>
             <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/shuffle_icon-icons.com_50042.png" />
           </button>
           <button onClick={home} className="home">
             <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-home_icon-icons.com_50253.png" />
           </button>
-          {/* <Link className="home" to="/" exact>
-          <button>
-            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-home_icon-icons.com_50253.png" />
-          </button>
-        </Link> */}
           <button className="next" onClick={next}>
             <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-forward_icon-icons.com_50040.png" />
           </button>
           <button className="last" onClick={back}>
             <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-backward_icon-icons.com_50041.png" />
           </button>
-          <button className="add" onClick={add}>
+          <button className={`add ${color}`} onClick={add}>
             <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/plus_icon-icons.com_50064.png" />
           </button>
         </div>
       </div>
-    </>
+      <div>
+        <Footer></Footer>
+      </div>
+    </div>
   )
 }
 
