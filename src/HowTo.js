@@ -2,7 +2,7 @@ import React from "react"
 
 function HowTo() {
   return (
-    <div className="to-do">
+    <div className="how-to">
       <h1> What is Tarantella?</h1>
       <p>
         Tarantella is a community-based music app designed with the indecisive
