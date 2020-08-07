@@ -51,7 +51,8 @@ General Assembly React Project
 
 |   Library    | Description                                             |
 | :----------: | :------------------------------------------------------ |
-| React Router | This will link the songs on Homepage to their info page |
+| React Router | Used to create Routes for clicked buttons that lead to sections |
+| Axios | Used to link Airtable API and to render images and information on the page |
 
 <br>
 
@@ -71,13 +72,26 @@ General Assembly React Project
 
 ```
 src
-      |__ Header.js
+      |__ Add.png
+      |__ App.css
       |__ App.js
+      |__ App.test.js
+      |__ Backwards.png
+      |__ Footer.js
+      |__ Github.png
+      |__ Header.js
       |__ Homepage.js
       |__ HowTo.js
+      |__ index.css
+      |__ index.js
+      |__ Linkedin.png
       |__ NewSong.js
+      |__ serviceWorker.js
+      |__ setupTests.js
+      |__ Shuffle.png
+      |__ Skip.png
       |__ SongInfo.js
-      |__ Footer.js
+      
 ```
 
 <br>
@@ -86,11 +100,11 @@ src
 
 | Component |    Type    | state | props | Description                                                                               |
 | :-------: | :--------: | :---: | :---: | :---------------------------------------------------------------------------------------- |
-| Homepage  | functional |   n   |   n   | _The header will contain the navigation and logo._                                        |
-|   HowTo   | functional |   n   |   n   | _Popup displaying on how to use._                                                         |
-|  Header   | functional |   n   |   n   | _The header will contain the title of the App._                                           |
-|  NewSong  | functional |   y   |   n   | _The Shuffle page will be a result of the user pressing the shuffle button._              |
-| SongInfo  | functional |   y   |   n   | _The Next page will be a result of the user pressing the next arrow. Displays next song._ |
+| Homepage  | functional |   n   |   y   | _The Homepage contains the song menu._                                        |
+|   HowTo   | functional |   n   |   n   | _The HowTo has all the infomation on how to use the App._                                                         |
+|  Header   | functional |   n   |   n   | _The Header will contain the title and the how to use aspect of the App._                                           |
+|  NewSong  | functional |   y   |   y   | _The NewSong allows the user to add a new song to the database._              |
+| SongInfo  | functional |   y   |   y   | _The SongInfo page displays all the info on a song: title, album, genre, artist, and an album picture._ |
 |  Footer   | functional |   n   |   n   | _The footer will show what I referenced for the project._                                 |
 
 <br>
@@ -101,33 +115,24 @@ src
 
 | Task                                        | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Setting up React App, Git HUB, and ReadME   |    H     |     3 hrs      |     4 hrs     |    4 hrs    |
-| Project proposal and Approval               |    H     |    1.5 hrs     |      TBD      |     TBD     |
-| Connect API and make sure it renders        |    H     |     3 hrs      |      TBD      |     TBD     |
-| Making sure functions work correctly        |    H     |     3 hrs      |      TBD      |     TBD     |
-| Add 5 songs data                            |    H     |      1 hr      |      TBD      |     TBD     |
-| CSS to get correct display                  |    M     |     3 hrs      |      TBD      |     TBD     |
-| Linking Popup How-to                        |    H     |     3 hrs      |      TBD      |     TBD     |
-| Adding media queries to make app responsive |    H     |     3 hrs      |      TBD      |     TBD     |
-| Making sure CRUD Adding aspects work        |    H     |     3 hrs      |      TBD      |     TBD     |
-| Debugging                                   |    H     |     3 hrs      |      TBD      |     TBD     |
-| Making sure that default image is added     |    L     |    1.5 hrs     |      TBD      |     TBD     |
-| Delete CRUD Button                          |    L     |     2 hrs      |      TBD      |     TBD     |
-| Advanced CSS                                |    L     |     2 hrs      |      TBD      |     TBD     |
-| Third-party API research and addition       |    L     |     3 hrs      |      TBD      |     TBD     |
-| TOTAL                                       |    -     |     35 hrs     |      TBD      |     TBD     |
+| Setting up React App, Git HUB, and ReadME   |    H     |     3 hrs      |     5 hrs     |    5 hrs    |
+| Project proposal and Approval               |    H     |    1.5 hrs     |      . 5 hrs      |     .5 hrs     |
+| Connect API and make sure it renders        |    H     |     3 hrs      |      3 hrs      |     3 hrs     |
+| Making sure functions work correctly        |    H     |     3 hrs      |      5 hrs      |     5 hrs     |
+| Add 15 songs data                            |    H     |      1 hr      |      2 hrs      |     2 hrs     |
+| CSS to get correct display                  |    M     |     3 hrs      |      4 hrs      |     4 hrs     |
+| Linking How-to                        |    H     |     2 hrs      |      1 hr      |     1 hr     |
+| Adding media queries to make app responsive |    H     |     3 hrs      |      5 hrs      |     5 hrs     |
+| Making sure CRUD Adding aspects work        |    H     |     3 hrs      |      2 hrs      |     2 hrs     |
+| Debugging                                   |    H     |     3 hrs      |      6 hrs      |     6 hrs     |
+| Making sure that default image is added     |    L     |    1.5 hrs     |      1 hr      |     1 hr     |
+| Delete CRUD Button                          |    L     |     2 hrs      |      0 hrs      |     0 hrs     |
+| Advanced CSS                                |    L     |     2 hrs      |      5 hrs      |     5 hrs     |
+| Third-party API research and addition       |    L     |     3 hrs      |      0 hrs      |     0 hrs     |
+| TOTAL                                       |    -     |     34 hrs     |      39.5 hrs      |     39.5 hrs     |
 
 <br>
 
-#### Helper Functions
-
-> Use this section to document all helper functions– generic functions that can be reused in other applications.
-
-|  Function  | Description                                |
-| :--------: | :----------------------------------------- |
-| Capitalize | _Lorem ipsum dolor sit amet, consectetur._ |
-
-<br>
 
 ### Post-MVP
 
@@ -147,8 +152,46 @@ src
 
 ### Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+```
+const [color, updateColor] = useState("white")
+
+
+<div className="color-buttons">
+          <button
+            className="white"
+            onClick={() => updateColor("white")}
+          ></button>
+          <button className="red" onClick={() => updateColor("red")}></button>
+          <button className="pink" onClick={() => updateColor("pink")}></button>
+          <button
+            className="orange"
+            onClick={() => updateColor("orange")}
+          ></button>
+          <button
+            className="yellow"
+            onClick={() => updateColor("yellow")}
+          ></button>
+          <button
+            className="green"
+            onClick={() => updateColor("green")}
+          ></button>
+          <button className="blue" onClick={() => updateColor("blue")}></button>
+          <button
+            className="purple"
+            onClick={() => updateColor("purple")}
+          ></button>
+        </div>
+
+```
+- In this section the buttons with a diffrent class are all changing the useState of color. It assigns a class of that color when the button is clicked. It leaves the body that color until you refresh
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+> I ran into the following problems while working
+- Shuffle page had a specific id so I couldn't shuffle it again. I had to move the function to not be a link and placed on app.js
+- Next and Back had the same issue as above
+- Had to remove all links and switch to a buttons to toggle a function instead of a redirect
+- Color buttons had to dynamically add a class. Had to set default color to white
+- Once deployed, images were not displaying on ios devices. Had to make the images local
+- Had to pass props to SongInfo so it would rerender once song info changed
+- Had to pass props to NewSon
