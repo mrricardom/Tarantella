@@ -250,32 +250,102 @@ footer div {
   padding-bottom: 10px;
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 479px) {
+  .header h1 {
+    color: white;
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+  }
+
+  .header h3 {
+    color: white;
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+    padding-top: 35px;
+    margin-top: 0;
+  }
+
+  .content-screen {
+    border: solid black;
+    display: flex;
+    background-color: #eff4fa;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+    max-height: 250px;
+    overflow-y: scroll;
+  }
+
+  .circle-menu {
+    height: 225px;
+    width: 225px;
+  }
+  .song-info img {
+    height: 125px;
+    width: 125px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .song-info-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 0;
+  }
+  .song-info-text h2 {
+    font-size: 15px;
+    padding-right: 5px;
+  }
+
+  .song-info-text h3 {
+    font-size: 10px;
+    padding-right: 3px;
+  }
+  .color-buttons {
+    margin-left: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+  .new-song form {
+    height: 100%;
+    overflow-y: scroll;
+    font-size: 15px;
+  }
+  .new-song {
+    height: 100%;
+  }
+  .new-song h1 {
+    font-size: 25px;
+  }
+
+  .circle-menu img {
+    height: 40px;
+    width: 40px;
+    align-content: center;
+  }
+
+  footer img {
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+  }
+
+  footer div {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding-bottom: 5px;
+  }
+  .body {
+    border: black solid;
+    margin: 0 20px 20px 20px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
