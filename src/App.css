@@ -284,9 +284,9 @@
   margin-bottom: 10px;
 }
 
-.submit {
+/* .submit {
   font-size: 25px;
-}
+} */
 
 footer {
   padding-left: 30px;
@@ -406,14 +406,13 @@ footer div {
     font-size: 25px;
   }
 
-  .submit {
-    -webkit-appearance: button;
+  /* .submit {
+    /* -webkit-appearance: button;
     font-size: 17px;
     height: 30px !important;
-    background-color: red;
-  }
-
-  .circle-menu img {
+    background-color: red; */
+  /* } */
+  */ .circle-menu img {
     height: 40px;
     width: 40px;
     -ms-flex-line-pack: center;
@@ -588,8 +587,8 @@ footer div {
     font-size: 22px;
   }
 
-  input.submit {
+  /* input.submit {
     font-size: 30px;
     height: 60px;
-  }
+  } */
 }
