@@ -7,6 +7,11 @@ import SongInfo from "./SongInfo"
 import HowTo from "./HowTo"
 import NewSong from "./NewSong"
 import Footer from "./Footer"
+import Home from "./Home.png"
+import Add from "./Add.png"
+import Shuffle from "./Shuffle.png"
+import Backwards from "./Backwards.png"
+import Skip from "./Skip.png"
 import "./App.css"
 
 function App() {
@@ -133,34 +138,19 @@ function App() {
         </div>
         <div className={`circle-menu `}>
           <button className="shuffle" onClick={handleClick}>
-            <img
-              src="https://cdn.icon-icons.com/icons2/510/PNG/512/shuffle_icon-icons.com_50042.png"
-              alt="shuffle"
-            />
+            <img src={Shuffle} alt="shuffle" />
           </button>
           <button onClick={home} className="home">
-            <img
-              src="https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-home_icon-icons.com_50253.png"
-              alt="home"
-            />
+            <img src={Home} alt="home" />
           </button>
           <button className="next" onClick={next}>
-            <img
-              src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-forward_icon-icons.com_50040.png"
-              alt="next"
-            />
+            <img src={Skip} alt="next" />
           </button>
           <button className="last" onClick={back}>
-            <img
-              src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-backward_icon-icons.com_50041.png"
-              alt="back"
-            />
+            <img src={Backwards} alt="back" />
           </button>
           <button className={`add ${color}`} onClick={add}>
-            <img
-              src="https://cdn.icon-icons.com/icons2/510/PNG/512/plus_icon-icons.com_50064.png"
-              alt="add"
-            />
+            <img src={Add} alt="add" />
           </button>
         </div>
       </div>
