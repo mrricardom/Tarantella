@@ -516,8 +516,8 @@ footer div {
     margin-bottom: 70px;
   }
 
-  footer {
-    font-size: 12px;
+  footer p {
+    font-size: 10px;
   }
 
   .new-song form {
