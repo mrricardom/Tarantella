@@ -187,11 +187,11 @@ const [color, updateColor] = useState("white")
 
 ### Code Issues & Resolutions
 
-> I ran into the following problems while working
+> I ran into the following problems while working:
 - Shuffle page had a specific id so I couldn't shuffle it again. I had to move the function to not be a link and placed on app.js
 - Next and Back had the same issue as above
 - Had to remove all links and switch to a buttons to toggle a function instead of a redirect
 - Color buttons had to dynamically add a class. Had to set default color to white
 - Once deployed, images were not displaying on ios devices. Had to make the images local
 - Had to pass props to SongInfo so it would rerender once song info changed
-- Had to pass props to NewSon
+- Had to pass props to NewSong to make sure it rendered automatically
