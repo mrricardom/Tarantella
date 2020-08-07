@@ -284,9 +284,9 @@
   margin-bottom: 10px;
 }
 
-/* .submit {
+.submit {
   font-size: 25px;
-} */
+}
 
 footer {
   padding-left: 30px;
@@ -316,20 +316,17 @@ footer div {
 
 @media only screen and (max-width: 479px) {
   .header h1 {
-    color: white;
     display: inline-block;
     margin-top: 0;
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
     font-size: 20px;
   }
 
   .header h3 {
-    color: white;
-    display: inline-block;
-    float: right;
     font-size: 15px;
-    padding-top: 35px;
+    padding-top: 22px;
+    padding-left: 20px;
     margin-top: 0;
   }
 
@@ -338,7 +335,6 @@ footer div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #eff4fa;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -406,13 +402,13 @@ footer div {
     font-size: 25px;
   }
 
-  /* .submit {
-    /* -webkit-appearance: button;
+  input.submit {
+    -webkit-appearance: button;
     font-size: 17px;
-    height: 30px !important;
-    background-color: red; */
-  /* } */
-  */ .circle-menu img {
+    height: 30px;
+  }
+
+  .circle-menu img {
     height: 40px;
     width: 40px;
     -ms-flex-line-pack: center;
@@ -422,7 +418,6 @@ footer div {
   footer img {
     height: 30px;
     width: 30px;
-    background-color: grey;
   }
 
   footer div {
@@ -432,7 +427,6 @@ footer div {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: grey;
     padding-bottom: 5px;
   }
   .body {
@@ -463,9 +457,6 @@ footer div {
   }
 
   .header h3 {
-    color: white;
-    display: inline-block;
-    float: right;
     font-size: 40px;
     padding-top: 45px;
     margin-top: 0;
@@ -523,8 +514,6 @@ footer div {
     height: 35px;
     width: 35px;
     margin-bottom: 70px;
-    outline: none;
-    border: black inset;
   }
 
   footer {
@@ -560,7 +549,6 @@ footer div {
   footer img {
     height: 60px;
     width: 60px;
-    background-color: grey;
   }
 
   footer div {
@@ -570,7 +558,6 @@ footer div {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background-color: grey;
     padding-bottom: 10px;
   }
 
@@ -587,8 +574,8 @@ footer div {
     font-size: 22px;
   }
 
-  /* input.submit {
+  input.submit {
     font-size: 30px;
     height: 60px;
-  } */
+  }
 }
