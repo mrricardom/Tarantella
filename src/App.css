@@ -406,7 +406,7 @@ footer div {
     font-size: 25px;
   }
 
-  input.submit {
+  .submit {
     font-size: 17px;
     height: 30px;
     background-color: red;
