@@ -133,19 +133,34 @@ function App() {
         </div>
         <div className={`circle-menu `}>
           <button className="shuffle" onClick={handleClick}>
-            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/shuffle_icon-icons.com_50042.png" />
+            <img
+              src="https://cdn.icon-icons.com/icons2/510/PNG/512/shuffle_icon-icons.com_50042.png"
+              alt="shuffle"
+            />
           </button>
           <button onClick={home} className="home">
-            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-home_icon-icons.com_50253.png" />
+            <img
+              src="https://cdn.icon-icons.com/icons2/510/PNG/512/ios7-home_icon-icons.com_50253.png"
+              alt="home"
+            />
           </button>
           <button className="next" onClick={next}>
-            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-forward_icon-icons.com_50040.png" />
+            <img
+              src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-forward_icon-icons.com_50040.png"
+              alt="next"
+            />
           </button>
           <button className="last" onClick={back}>
-            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-backward_icon-icons.com_50041.png" />
+            <img
+              src="https://cdn.icon-icons.com/icons2/510/PNG/512/skip-backward_icon-icons.com_50041.png"
+              alt="back"
+            />
           </button>
           <button className={`add ${color}`} onClick={add}>
-            <img src="https://cdn.icon-icons.com/icons2/510/PNG/512/plus_icon-icons.com_50064.png" />
+            <img
+              src="https://cdn.icon-icons.com/icons2/510/PNG/512/plus_icon-icons.com_50064.png"
+              alt="add"
+            />
           </button>
         </div>
       </div>
