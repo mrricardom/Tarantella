@@ -36,10 +36,19 @@
 
 .content-screen {
   border: solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #eff4fa;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 70px 70px 0 70px;
   height: 500px;
@@ -109,9 +118,18 @@
 }
 
 .song-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -123,8 +141,14 @@
 }
 
 .song-info-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-line-pack: center;
   align-content: center;
   margin-top: 0;
 }
@@ -144,8 +168,11 @@
   width: 400px;
   margin: 0 auto;
   margin-bottom: 80px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr) [3];
   grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr) [3];
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     ". shuffle ."
@@ -156,12 +183,17 @@
 }
 
 .circle-menu button {
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
 .shuffle {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: shuffle;
+  -ms-grid-column-align: stretch;
   justify-self: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   border: none;
   background: none;
@@ -169,8 +201,12 @@
 }
 
 .last {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: last;
+  -ms-grid-column-align: stretch;
   justify-self: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   border: none;
   background: none;
@@ -178,8 +214,12 @@
 }
 
 .next {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: next;
+  -ms-grid-column-align: stretch;
   justify-self: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   border: none;
   background: none;
@@ -187,8 +227,12 @@
 }
 
 .add {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: add;
+  -ms-grid-column-align: stretch;
   justify-self: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   border: black solid;
   border-radius: 50%;
@@ -196,8 +240,12 @@
 }
 
 .home {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: home;
+  -ms-grid-column-align: stretch;
   justify-self: stretch;
+  -ms-grid-row-align: stretch;
   align-self: stretch;
   border: none;
   outline: none;
@@ -207,16 +255,27 @@
 .circle-menu img {
   height: 50px;
   width: 50px;
+  -ms-flex-line-pack: center;
   align-content: center;
 }
 
 .new-song {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
 .new-song form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -233,6 +292,7 @@ footer {
   padding-left: 30px;
   padding-right: 30px;
   width: 100vw;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: grey;
 }
@@ -244,7 +304,11 @@ footer img {
 }
 
 footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background-color: grey;
   padding-bottom: 10px;
@@ -271,10 +335,19 @@ footer div {
 
   .content-screen {
     border: solid black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #eff4fa;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin: 10px 10px 0 10px;
     max-height: 250px;
@@ -293,8 +366,14 @@ footer div {
   }
 
   .song-info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-line-pack: center;
     align-content: center;
     margin-top: 0;
   }
@@ -330,6 +409,7 @@ footer div {
   .circle-menu img {
     height: 40px;
     width: 40px;
+    -ms-flex-line-pack: center;
     align-content: center;
   }
 
@@ -340,7 +420,11 @@ footer div {
   }
 
   footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: grey;
     padding-bottom: 5px;
@@ -403,8 +487,14 @@ footer div {
   }
 
   .song-info-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-line-pack: center;
     align-content: center;
     margin-top: 0;
   }
@@ -462,6 +552,7 @@ footer div {
   .circle-menu img {
     height: 90px;
     width: 90px;
+    -ms-flex-line-pack: center;
     align-content: center;
   }
 
@@ -472,7 +563,11 @@ footer div {
   }
 
   footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background-color: grey;
     padding-bottom: 10px;
