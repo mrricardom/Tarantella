@@ -394,7 +394,6 @@ footer div {
     font-size: 12px;
   }
   .new-song form {
-    -webkit-appearance: button;
     height: 100%;
     overflow-y: scroll;
     font-size: 15px;
