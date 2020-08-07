@@ -394,6 +394,7 @@ footer div {
     font-size: 12px;
   }
   .new-song form {
+    -webkit-appearance: button;
     height: 100%;
     overflow-y: scroll;
     font-size: 15px;
@@ -407,6 +408,7 @@ footer div {
   }
 
   .submit {
+    -webkit-appearance: button;
     font-size: 17px;
     height: 30px;
     background-color: red;
