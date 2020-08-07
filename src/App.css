@@ -406,6 +406,12 @@ footer div {
     font-size: 25px;
   }
 
+  input .submit {
+    font-size: 17px;
+    height: 30px;
+    background-color: red;
+  }
+
   .circle-menu img {
     height: 40px;
     width: 40px;
@@ -438,11 +444,6 @@ footer div {
   }
   .how-to p {
     font-size: 15px;
-  }
-
-  input.submit {
-    font-size: 17px;
-    height: 30px;
   }
 }
 

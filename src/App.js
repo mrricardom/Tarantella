@@ -89,7 +89,6 @@ function App() {
       <Header></Header>
       <div className={`body ${color}`}>
         <div className="content-screen">
-          {/* <Link to="/new-song">Add a Song</Link> */}
           <Switch>
             <Route path="/" exact>
               <Homepage
