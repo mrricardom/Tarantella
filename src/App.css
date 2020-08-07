@@ -409,7 +409,7 @@ footer div {
   .submit {
     -webkit-appearance: button;
     font-size: 17px;
-    height: 30px;
+    height: 30px !important;
     background-color: red;
   }
 
