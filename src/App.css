@@ -356,8 +356,144 @@ footer div {
     font-size: 15px;
   }
 
-  .submit {
+  input.submit {
     font-size: 17px;
-    height: 24px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .app {
+    height: 100%;
+  }
+
+  .header {
+    width: 100%;
+  }
+  .header h1 {
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 70px;
+    font-size: 65px;
+  }
+
+  .header h3 {
+    color: white;
+    display: inline-block;
+    float: right;
+    font-size: 40px;
+    padding-top: 45px;
+    margin-top: 0;
+  }
+
+  .content-screen {
+    margin: 50px 50px 0 50px;
+    max-height: 700px;
+    height: 700px;
+  }
+
+  .circle-menu {
+    height: 525px;
+    width: 525px;
+  }
+  .song-info img {
+    height: 325px;
+    width: 325px;
+    padding-right: 20px;
+  }
+
+  .song-info-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 0;
+  }
+
+  .song-info-text h2 {
+    font-size: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .song-info-text h3 {
+    font-size: 30px;
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+
+  .song-menu {
+    font-size: 33px;
+  }
+
+  .color-buttons {
+    margin-left: 50px;
+  }
+  .color-buttons button {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 70px;
+    outline: none;
+    border: black inset;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .new-song form {
+    height: 100%;
+    overflow-y: scroll;
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  .new-song {
+    height: 100%;
+  }
+
+  .new-song h1 {
+    font-size: 45px;
+  }
+
+  .new-song input {
+    height: 30px;
+  }
+
+  .circle-menu img {
+    height: 90px;
+    width: 90px;
+    align-content: center;
+  }
+
+  footer img {
+    height: 60px;
+    width: 60px;
+    background-color: grey;
+  }
+
+  footer div {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    padding-bottom: 10px;
+  }
+
+  footer p {
+    font-size: 20px;
+  }
+  .body {
+    border: black solid;
+    margin: 0 20px 20px 20px;
+  }
+  .how-to h1 {
+    font-size: 30px;
+  }
+  .how-to p {
+    font-size: 22px;
+  }
+
+  input.submit {
+    font-size: 30px;
+    height: 60px;
   }
 }
