@@ -2,6 +2,9 @@
 
 General Assembly React Project
 
+# Project URL
+https://tarantellamusic.netlify.app/
+
 ### Overview
 
 **Tarantella** is a community-based music app designed with the undecisive music listener in mind. Through a simple interface, a user can add all of their favorite songs to a shared database and let their app choose which song to listen to next. Discover music you have never heard off. The user can press shuffle to get a random song, or click through the songs in the database to view their song's information. It is up to a user to add the song: title, artist, genre, and album; a picture will be optional to add to their entry. A familiar design will greet the user as they scroll through new upbeat music options. Let's all Taranella!
