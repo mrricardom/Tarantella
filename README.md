@@ -2,7 +2,7 @@
 
 General Assembly React Project
 
-# Project URL
+### Project URL
 https://tarantellamusic.netlify.app/
 
 ### Overview
